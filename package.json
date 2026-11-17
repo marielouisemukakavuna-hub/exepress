@@ -2,17 +2,36 @@
   "name": "exepres",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/marielouisemukakavuna-hub/exepress#readme",
+  "bugs": {
+    "url": "https://github.com/marielouisemukakavuna-hub/exepress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marielouisemukakavuna-hub/exepress.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "js,json"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.8",
     "express": "^5.3.0",
-    "mongoose": "^9.11.2"
+    "express-validator": "^7.3.2",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.2",
+    "nodemon": "^3.1.14"
   }
 }
