@@ -48,7 +48,7 @@ static login = async (req,res)=>{
             message:"Login successfuly",
             token:token
          })
-
+        
             }
 
 
